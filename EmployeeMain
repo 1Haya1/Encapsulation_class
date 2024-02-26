@@ -1,0 +1,26 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
+
+                Employee employee1 = new Employee("001", "haya", 50000);
+
+                // طباعة بيانات الموظف قبل رفع الراتب
+                System.out.println("بيانات الموظف قبل رفع الراتب:");
+                System.out.println(employee1.toString());
+
+                // رفع الراتب بنسبة 10%
+                employee1.raiseSalary(10);
+
+                // طباعة بيانات الموظف بعد رفع الراتب
+                System.out.println("بيانات الموظف بعد رفع الراتب:");
+                System.out.println(employee1.toString());
+
+                // طباعة الراتب السنوي للموظف
+                System.out.println("الراتب السنوي للموظف: " + employee1.getAnnualSalary());
+            }
+        }
+
+
+
