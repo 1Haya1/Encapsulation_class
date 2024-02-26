@@ -1,0 +1,29 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
+
+                Account account1 = new Account("1", "haya", 1000);
+                System.out.println("بيانات الحساب الأول: " + account1.toString());
+
+                // إنشاء حساب آخر
+                Account account2 = new Account("2", "jana", 500);
+                System.out.println("بيانات الحساب الثاني: " + account2.toString());
+
+                // إضافة رصيد لحساب 1
+                account1.credit(200);
+                System.out.println("الرصيد الجديد للحساب الأول: " + account1.getBalance());
+
+                // سحب مبلغ من حساب 2
+                account2.debit(100);
+                System.out.println("الرصيد الجديد للحساب الثاني: " + account2.getBalance());
+
+                // تحويل مبلغ من حساب 1 إلى حساب 2
+                account1.transferTo(account2, 300);
+                System.out.println("الرصيد الجديد للحساب الأول: " + account1.getBalance());
+                System.out.println("الرصيد الجديد للحساب الثاني: " + account2.getBalance());
+            }
+        }
+
+
